@@ -1,31 +1,55 @@
-# Cobblestone-Energy-Project
-Project submitted as part of job application to Cobblestone Energy
+# Project Submission for Cobblestone Energy
 
-Below is the project description I received:
-Project Title:
-Efficient Data Stream Anomaly Detection
+*Submitted as part of a job application to Cobblestone Energy.*
 
-Project Description:
-Your task is to develop a Python script capable of detecting anomalies in a continuous data stream. This stream, simulating real-time sequences of floating-point numbers, could represent various metrics such as financial transactions or system metrics. Your focus will be on identifying unusual patterns, such as exceptionally high values or deviations from the norm.
+---
 
-Objectives:
+## Project Description
 
-Algorithm Selection: Identify and implement a suitable algorithm for anomaly detection, capable of adapting to concept drift and seasonal variations.
-Data Stream Simulation: Design a function to emulate a data stream, incorporating regular patterns, seasonal elements, and random noise.
-Anomaly Detection: Develop a real-time mechanism to accurately flag anomalies as the data is streamed.
-Optimization: Ensure the algorithm is optimized for both speed and efficiency.
-Visualization: Create a straightforward real-time visualization tool to display both the data stream and any detected anomalies.
-Requirements:
+### Project Title: Efficient Data Stream Anomaly Detection
 
-The project must be implemented using Python 3.x.
-Your code should be thoroughly documented, with comments to explain key sections.
-Include a concise explanation of your chosen algorithm and its effectiveness.
-Ensure robust error handling and data validation.
-Limit the use of external libraries. If necessary, include a requirements.txt file.
+**Objective:** Develop a Python script capable of detecting anomalies in a continuous data stream. This simulated stream represents real-time sequences of floating-point numbers, such as financial transactions or system metrics. The goal is to identify unusual patterns, such as exceptionally high values or deviations from the norm.
 
-Below is a brief explanation of the anomaly detection algorithm I implemented:
-The anomaly detection algorithm uses a rolling mean and standard deviation to monitor deviations in real-time data streams. By calculating these metrics over a fixed-size window of recent data points, the algorithm adapts to local trends and seasonal patterns, effectively handling concept drift. Anomalies are flagged when a data point deviates beyond a set threshold (e.g., 2 standard deviations) from the rolling mean, highlighting outliers such as sudden spikes or drops.
+---
 
-This threshold-based approach is computationally efficient and well-suited for streaming environments, as it quickly identifies outliers without extensive processing. The reliance on a rolling window allows the detection mechanism to adjust dynamically, making it effective for data with shifting distributions.
+### Project Objectives
 
-While straightforward, this approach effectively flags anomalies in scenarios where they represent large deviations from recent norms.
+1. **Algorithm Selection**:  
+   Identify and implement a suitable algorithm for anomaly detection that adapts to concept drift and seasonal variations.
+
+2. **Data Stream Simulation**:  
+   Design a function to emulate a data stream, incorporating regular patterns, seasonal elements, and random noise.
+
+3. **Anomaly Detection**:  
+   Develop a real-time mechanism to accurately flag anomalies as the data is streamed.
+
+4. **Optimization**:  
+   Ensure the algorithm is optimized for both speed and efficiency.
+
+5. **Visualization**:  
+   Create a straightforward real-time visualization tool to display both the data stream and any detected anomalies.
+
+---
+
+### Project Requirements
+
+- **Implementation Language**: Python 3.x
+- **Documentation**: Code should be thoroughly documented, with comments to explain key sections.
+- **Algorithm Explanation**: Include a concise explanation of the chosen algorithm and its effectiveness.
+- **Error Handling**: Ensure robust error handling and data validation.
+- **External Libraries**: Limit the use of external libraries. If necessary, include a `requirements.txt` file.
+
+---
+
+## Algorithm Explanation
+
+The anomaly detection algorithm is based on a **rolling mean and standard deviation** to monitor deviations in real-time data streams. Key features of the algorithm include:
+
+- **Real-Time Adaptation**: By calculating the rolling mean and standard deviation over a fixed-size window of recent data points, the algorithm adjusts to local trends and seasonal patterns, effectively handling concept drift.
+- **Anomaly Flagging**: Anomalies are flagged when a data point deviates beyond a set threshold (e.g., 2 standard deviations) from the rolling mean, which highlights outliers such as sudden spikes or drops.
+- **Efficiency**: This threshold-based approach is computationally efficient and well-suited for streaming environments, as it quickly identifies outliers without extensive processing.
+- **Dynamic Adjustment**: The rolling window allows the detection mechanism to adapt dynamically to shifting data distributions.
+
+While straightforward, this method effectively flags anomalies in scenarios where they represent significant deviations from recent norms. 
+
+---
