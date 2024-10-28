@@ -41,9 +41,9 @@
 
 ---
 
-## Algorithm Explanation
+## Explanation of my Algorithm
 
-The anomaly detection algorithm is based on a **rolling mean and standard deviation** to monitor deviations in real-time data streams. Key features of the algorithm include:
+The anomaly detection algorithm I implemented is based on a **rolling mean and standard deviation** to monitor deviations in real-time data streams. Key features of the algorithm include:
 
 - **Real-Time Adaptation**: By calculating the rolling mean and standard deviation over a fixed-size window of recent data points, the algorithm adjusts to local trends and seasonal patterns, effectively handling concept drift.
 - **Anomaly Flagging**: Anomalies are flagged when a data point deviates beyond a set threshold (e.g., 2 standard deviations) from the rolling mean, which highlights outliers such as sudden spikes or drops.
